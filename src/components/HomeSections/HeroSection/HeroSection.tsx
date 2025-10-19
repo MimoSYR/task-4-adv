@@ -9,14 +9,14 @@ interface Statistic {
 
 interface HeroSectionProps {
   title?: string;
-  description?: string;
+  paragraph?: string;
   statistics?: Statistic[];
   backgroundImage?: string;
 }
 
 const HeroSection = ({
   title = "Discover a place you will love to live",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque.",
+  paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque.",
   statistics = [
     {
       id: 1,
@@ -47,7 +47,7 @@ const HeroSection = ({
         <div className="hero-container">
           <div className="data">
             <h1>{title}</h1>
-            <p>{description}</p>
+            <p>{paragraph}</p>
           </div>
           <div className="statistics">
             {statistics.map((statistic) => (

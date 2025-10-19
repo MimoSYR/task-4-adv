@@ -8,7 +8,7 @@ const Root = () => {
       {/* header */}
       <Header />
       {/* Main */}
-      <main style={{ height: "200vh" }}>
+      <main>
         <Outlet />
       </main>
       {/* footer */}

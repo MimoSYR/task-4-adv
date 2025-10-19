@@ -26,11 +26,13 @@ button{
 
 .container{
   padding: 0 70px;
+  margin-bottom: 94px;
 }
 
 /* responsive */
 @media(max-width: 1200px){
   .container{
     padding: 0 20px;
+    margin-bottom: 64px;
   }
 }
