@@ -1,0 +1,169 @@
+header{
+    padding: 17px 0;
+    background-color: #FFFFFF;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* Logo */
+
+
+/* //////////////////////////////////////////////////////// */
+/* Navigation */
+.header-nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+.header-nav ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.1s;
+}
+
+/* ~ large screens */
+
+.header-nav .menu-btn,
+.header-nav .menu-mobile{
+    display: none;
+}
+
+/* ~ small screens */
+
+.header-nav .menu-mobile{
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    transform: translateY(-200vh);
+    transition: all 0.2s;
+}
+
+.header-nav .move-down{
+    transform: translateY(0);
+}
+
+.header-nav .menu-mobile .menu-close{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 20px 0;
+    margin-bottom: 32px;
+}
+
+.header-nav .menu-mobile ul{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.header-nav .menu-mobile ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav .menu-mobile ul li a{
+    padding: 10px 20px;
+    text-align: left;
+    background-color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 64px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.header-nav .menu-mobile ul li a.active{
+    background-color: #D7E6EA;
+    border-top: none;
+    border-bottom: none;
+}
+
+.header-nav .menu-mobile .login-btn{
+    margin: 62px auto 0;
+}
+
+.header-nav .menu-mobile .login-btn button{
+    padding: 13px 80px;
+    font-size: 14px;
+}
+
+/* Login btn */
+.header-container .login-btn button{
+    background-color: #025595;
+    padding: 13px 50px;
+    border-radius: 6px;
+    color: #F5F5F5;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.1s;
+}
+
+.header-container .login-btn button:hover{
+    box-shadow: 0px 0px 10px .5px #178de7;
+    background-color: #0464ad;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* Responsive */
+@media(max-width:1200px){
+    .header-nav .menu-btn,
+    .header-nav .menu-mobile .login-btn{
+        display: block;
+    }
+    .header-nav .menu-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .header-nav .menu,
+    .header-container .login-btn{
+        display: none;
+    }
+
+    header{
+        padding-top: 20px;
+    }
+}
+@media(min-width:1200px){
+    .header-nav ul li a{
+        padding-bottom: 8px;
+    }
+    .header-nav ul li a::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        border-radius: 6px;
+        background-color: #025595;
+        transition: width 0.2s;
+    }
+
+    .header-nav ul li a:hover::after{
+        width: 100%;
+    }
+
+    .header-nav ul li{
+        transition: all 0.2s;
+    }
+
+    .header-nav ul li:hover{
+        transform: translateY(-4px);
+    }
+
+    .header-nav ul li a.active::after{
+        width: 100%;
+    }
+}
