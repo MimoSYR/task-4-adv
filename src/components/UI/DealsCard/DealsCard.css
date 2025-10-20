@@ -1,0 +1,31 @@
+.deals-card{
+    width: 387.80px;
+    height: 300px;
+    position: relative;
+}
+
+.deals-card .features{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 14px;
+    gap: 7px;
+}
+
+.deals-card .features p{
+    font-size: 12px;
+    font-weight: 400;
+    padding: 6px 12px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    background-color: #22222266;
+}
+
+/* Responsive */
+@media(max-width:1200px){
+    .deals-card{
+        width: 300px;
+    }
+}

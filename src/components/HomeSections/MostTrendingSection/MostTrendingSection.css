@@ -23,6 +23,8 @@
     gap: 30px 25px;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 1226px;
 }
 
 /* Responsive */
