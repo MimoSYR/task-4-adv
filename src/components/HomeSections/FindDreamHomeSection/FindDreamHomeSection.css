@@ -1,6 +1,7 @@
 #find-dream-home{
     width: 100%;
     height: 380px;
+    margin-bottom: 94px;
 }
 
 #find-dream-home .img-bg{
@@ -41,6 +42,9 @@
 
 /* Responsive */
 @media(max-width: 1200px){
+    #find-dream-home{
+        margin-bottom: 64px;
+    }
     .find-dream-home-container h2{
         font-size: 30px;
     }

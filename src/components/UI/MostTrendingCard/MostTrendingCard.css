@@ -1,0 +1,71 @@
+.most-trending-card{
+    width: 382px;
+    height: 447px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+    transition: all 0.2s;
+}
+
+.most-trending-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px 0px #0000003a;
+}
+
+.most-trending-card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 39%;
+}
+
+.most-trending-card .info{
+    margin-top: 16px;
+}
+
+.most-trending-card .info p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #025595;
+}
+
+.most-trending-card .info h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.most-trending-card .location{
+    display: flex;
+    gap: 10.48px;
+    align-items: center;
+}
+
+.most-trending-card .location p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Responsive */
+@media(max-width: 1200px){
+    .most-trending-card{
+        width: 320px;
+        height: 380px;
+        padding: 16px;
+    }
+    .most-trending-card img{
+        width: 288px;
+    }
+    .most-trending-card .info h3{
+        font-size: 16px
+    }
+    .most-trending-card .location p{
+        font-size: 12px;
+    }
+    .most-trending-card .location img{
+        width: 18px;
+    }
+}
