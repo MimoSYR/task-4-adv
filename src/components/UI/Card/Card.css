@@ -8,6 +8,12 @@
     width: 380px;
     height: 255px;
     box-shadow: 0 0 2px .1px #22222280;
+    transition: .2s;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
 }
 
 .card.blue{
@@ -16,8 +22,8 @@
 
 .card .card-icon{
     height: 40px;
-    background-color: #4e9dda;
     width: fit-content;
+    margin-bottom: 20px;
 }
 
 .card.blue .card-icon{
@@ -42,4 +48,12 @@
 
 .card.blue p{
     color: #FFFFFF;
+}
+
+/* Responsive */
+@media(max-width: 1200px){
+    .card{
+        width: 320px;
+        height: 218px;
+    }
 }

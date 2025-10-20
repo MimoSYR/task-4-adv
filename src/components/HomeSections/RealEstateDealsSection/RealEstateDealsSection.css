@@ -54,7 +54,7 @@
     .real-estate-deals-container .cards-container{
         flex-direction: column;
         flex-wrap: nowrap;
-        gap: 20px;
         align-items: center;
+        gap: 20px;
     }
 }

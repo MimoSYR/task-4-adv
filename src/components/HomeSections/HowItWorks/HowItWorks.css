@@ -23,3 +23,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+/* Responsive */
+@media(max-width:1200px){
+    .how-it-works-container .cards-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
